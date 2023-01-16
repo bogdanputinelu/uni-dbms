@@ -1,5 +1,5 @@
--- 4)Implementa?i în Oracle diagrama conceptual? realizat?: defini?i toate tabelele, 
--- implementând toate constrângerile de integritate necesare (chei primare, cheile externe etc). 
+-- 4)Implementa?i Ã®n Oracle diagrama conceptual? realizat?: defini?i toate tabelele, 
+-- implementÃ¢nd toate constrÃ¢ngerile de integritate necesare (chei primare, cheile externe etc). 
 
 --entitatea PARTENER
 create table PARTENER(
@@ -155,8 +155,8 @@ create table evenimente(
     nume varchar2(30)
 );
 
--- 5)Ad?uga?i informa?ii coerente în tabelele create (minim 5 înregistr?ri pentru fiecare 
--- entitate independent?; minim 10 înregistr?ri pentru tabela asociativ?).
+-- 5)Ad?uga?i informa?ii coerente Ã®n tabelele create (minim 5 Ã®nregistr?ri pentru fiecare 
+-- entitate independent?; minim 10 Ã®nregistr?ri pentru tabela asociativ?).
 
 --secventa care va ajuta in inserarea inregistrarilor in GRADINA_ZOOLOGICA
 create sequence secv_zoo
@@ -6964,7 +6964,7 @@ values(424,761,831,'16-MAY-2022',TO_DATE('16-MAY-2022 19:26','DD-MON-YYYY HH24:M
 
 commit;
 
--- 6) Formula?i în limbaj natural o problem? pe care s? o rezolva?i folosind un subprogram stocat independent 
+-- 6) Formula?i Ã®n limbaj natural o problem? pe care s? o rezolva?i folosind un subprogram stocat independent 
 -- care s? utilizeze dou? tipuri diferite de colec?ii studiate. Apela?i subprogramul. 
 
 
@@ -7082,7 +7082,7 @@ end;
 /
 
 
--- 7) Formula?i în limbaj natural o problem? pe care s? o rezolva?i folosind
+-- 7) Formula?i Ã®n limbaj natural o problem? pe care s? o rezolva?i folosind
 -- un subprogram stocat independent care s? utilizeze 2 tipuri diferite de cursoare studiate, 
 -- unul dintre acestea fiind cursor parametrizat. Apela?i subprogramul.
 
@@ -7167,9 +7167,9 @@ end;
 /
 
 
--- 8) Formula?i în limbaj natural o problem? pe care s? o rezolva?i folosind un subprogram stocat independent de tip func?ie 
--- care s? utilizeze într-o singur? comand? SQL 3 dintre tabelele definite. Defini?i minim 2 excep?ii. 
--- Apela?i subprogramul astfel încât s? eviden?ia?i toate cazurile tratate. 
+-- 8) Formula?i Ã®n limbaj natural o problem? pe care s? o rezolva?i folosind un subprogram stocat independent de tip func?ie 
+-- care s? utilizeze Ã®ntr-o singur? comand? SQL 3 dintre tabelele definite. Defini?i minim 2 excep?ii. 
+-- Apela?i subprogramul astfel Ã®ncÃ¢t s? eviden?ia?i toate cazurile tratate. 
 
 -- Se da o gradina zoologica (id_zoo). Sa se returneze numele partenerului care a facut cele mai multe donatii catre
 -- aceasta gradina zoologica. Sa se trateze exceptiile cand gradina zoo data nu exista, cand exista mai multi parteneri
@@ -7228,9 +7228,9 @@ end;
 
 
 
--- 9) Formula?i în limbaj natural o problem? pe care s? o rezolva?i folosind un subprogram stocat independent de tip procedur? 
--- care s? utilizeze într-o singur? comand? SQL 5 dintre tabelele definite. Trata?i toate excep?iile care pot ap?rea, 
--- incluzând excep?iile NO_DATA_FOUND ?i TOO_MANY_ROWS. Apela?i subprogramul astfel încât s? eviden?ia?i toate cazurile tratate. 
+-- 9) Formula?i Ã®n limbaj natural o problem? pe care s? o rezolva?i folosind un subprogram stocat independent de tip procedur? 
+-- care s? utilizeze Ã®ntr-o singur? comand? SQL 5 dintre tabelele definite. Trata?i toate excep?iile care pot ap?rea, 
+-- incluzÃ¢nd excep?iile NO_DATA_FOUND ?i TOO_MANY_ROWS. Apela?i subprogramul astfel Ã®ncÃ¢t s? eviden?ia?i toate cazurile tratate. 
 
 -- Dandu-se o gradina zoologica (id_zoo), sa se afle cea mai comuna specie de animale din aceasta. Apoi sa se afiseze
 -- animalele care fac parte din aceasta specie (nu si din aceasta gradina zoologica) care , in ziua de 16 mai 2022, 
@@ -7407,7 +7407,7 @@ from evenimente;
 
 
 
--- 13) Defini?i un pachet care s? con?in? toate obiectele definite în cadrul proiectului. 
+-- 13) Defini?i un pachet care s? con?in? toate obiectele definite Ã®n cadrul proiectului. 
 
 create or replace package gradini_zoo is
     procedure angajati_hranesc(id_partener in partener.id_part%type);
